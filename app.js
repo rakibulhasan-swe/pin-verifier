@@ -21,7 +21,9 @@ function keyPadClicked(event){
     const keyNumber = (event.target.innerText);
     const inputNumber = document.getElementById('show-keyNumber');
     if(isNaN(keyNumber)){
-        inputNumber.value = '';
+        if(keyNumber=='C'){
+            inputNumber.value = '';
+        }
     }else{
         const prevNumber = inputNumber.value;
         const newNumber = prevNumber+keyNumber;

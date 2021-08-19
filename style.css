@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+h1{
+     color: whitesmoke;
+}
 body {
     background: #10101B;
     height: 100vh;
